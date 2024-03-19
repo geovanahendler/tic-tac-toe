@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(145deg, #111a19 0, #0a110f 25%, #000000 50%, #000000 75%, #000000 100%);
+    width: 40%;
+    padding: 50px;
+    border-radius: 24px;
+}
+
+#formContainer h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px;
+}
+
+label {
+    font-size: 16;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#formContainer button {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #df6904;
+    cursor: pointer;
+    color: antiquewhite;
+    font-weight: 800;
+}
+   
+
+#gameContainer {
+    background-image: linear-gradient(145deg, #111a19 0, #0a110f 25%, #000000 50%, #000000 75%, #000000 100%);
+    width: 50%;
+    height: 95vh;
+}
+
+#gameContainer h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+#board1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 70%;
+    height: 20vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
+    border: 1px solid;
+    margin: 10px;
+}
+
+#board button {
+    width: 95%;
+    height: 20vh;
+    background-color: gray;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+#board button:hover {
+    border-color: #df6904;
+}
+
+#turnPlayer {
+    font-size: 16;
+    font-weight: 700;
+    margin: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 914px) {
+    #formContainer h1 {
+        font-size: 40px;
+    }
+
+    #gameContainer h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 745px) {
+
+    #gameContainer {
+        width: 60%;
+        height: 90vh;
+    }
+
+    #formContainer h1 {
+        font-size: 30px;
+    }
+
+    #gameContainer h1 {
+        font-size: 30px;
+    }
+
+    #turnPlayer {
+        font-size: 12;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 607px) {
+
+    #gameContainer {
+        width: 60%;
+        height: 75vh;
+    }
+
+    #formContainer h1 {
+        font-size: 25px;
+    }
+
+    #gameContainer h1 {
+        font-size: 25px;
+    }
+
+    #turnPlayer {
+        font-size: 12;
+        font-weight: 700;
+    }
+
+    #board {
+        width: 80%;
+        height: 15vh;
+    }
+
+    #board button {
+        width: 95%;
+        height: 15vh;
+    }
+}
+
+@media (max-width: 495px) {
+
+    #gameContainer {
+        width: 60%;
+        height: 70vh;
+    }
+
+    #formContainer h1 {
+        font-size: 20px;
+    }
+
+    #gameContainer h1 {
+        font-size: 20px;
+    }
+
+    #turnPlayer {
+        font-size: 12;
+        font-weight: 700;
+    }
+
+    #board {
+        width: 90%;
+        height: 10vh;
+    }
+
+    #board button {
+        width: 90%;
+        height: 10vh;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="formContainer">
+        <h1>Jogo da Velha</h1>
+        <form id="formPlayer">
+            <label for="player1">Digite o nome do jogador 1:</label>
+            <input type="text" id="player1" required>
+
+            <label for="player2">Digite o nome do jogador 2:</label>
+            <input type="text" id="player2" required>
+
+            <button type="button" onclick="startGame()">Iniciar Jogo</button>
+        </form>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <h1>Jogo da Velha</h1>
+        <div id="turnPlayer"></div>
+        
+        <div id="board1">
+            <div id="board">
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+                <button id="squareBoard" class="squareBoard"></button>
+            </div>
+    </div>
+    </div>
+
+    <div id="champion" style="display: none;"></div>
+</body>
+</html>
